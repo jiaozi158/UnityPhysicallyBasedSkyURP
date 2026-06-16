@@ -585,6 +585,7 @@ public class PhysicallyBasedSkyURP : ScriptableRendererFeature
         }
 
         #region Non Render Graph Pass
+    #if !UNITY_6000_4_OR_NEWER
         // Passing the final sun color to the Execute() method
         private float3 mainLightColor;
 
@@ -656,6 +657,7 @@ public class PhysicallyBasedSkyURP : ScriptableRendererFeature
             
             CommandBufferPool.Release(cmd);
         }
+    #endif
         #endregion
 
     #if UNITY_6000_0_OR_NEWER
@@ -1097,6 +1099,7 @@ public class PhysicallyBasedSkyURP : ScriptableRendererFeature
         }
 
         #region Non Render Graph Pass
+    #if !UNITY_6000_4_OR_NEWER
         bool lutDataChanged;
     #if UNITY_6000_0_OR_NEWER
         [Obsolete]
@@ -1274,6 +1277,7 @@ public class PhysicallyBasedSkyURP : ScriptableRendererFeature
             
             CommandBufferPool.Release(cmd);
         }
+    #endif
         #endregion
 
     #if UNITY_6000_0_OR_NEWER
@@ -1621,6 +1625,7 @@ public class PhysicallyBasedSkyURP : ScriptableRendererFeature
         }
 
         #region Non Render Graph Pass
+    #if !UNITY_6000_4_OR_NEWER
     #if UNITY_6000_0_OR_NEWER
         [Obsolete]
     #endif
@@ -1660,6 +1665,7 @@ public class PhysicallyBasedSkyURP : ScriptableRendererFeature
 
             CommandBufferPool.Release(cmd);
         }
+    #endif
         #endregion
 
     #if UNITY_6000_0_OR_NEWER
@@ -1826,6 +1832,7 @@ public class PhysicallyBasedSkyURP : ScriptableRendererFeature
         }
 
         #region Non Render Graph Pass
+    #if !UNITY_6000_4_OR_NEWER
     #if UNITY_6000_0_OR_NEWER
         [Obsolete]
     #endif
@@ -1854,6 +1861,7 @@ public class PhysicallyBasedSkyURP : ScriptableRendererFeature
             
             CommandBufferPool.Release(cmd);
         }
+    #endif
         #endregion
 
     #if UNITY_6000_0_OR_NEWER
@@ -1964,6 +1972,7 @@ public class PhysicallyBasedSkyURP : ScriptableRendererFeature
         }
 
         #region Non Render Graph Pass
+    #if !UNITY_6000_4_OR_NEWER
     #if UNITY_6000_0_OR_NEWER
         [Obsolete]
     #endif
@@ -2106,6 +2115,7 @@ public class PhysicallyBasedSkyURP : ScriptableRendererFeature
             
             CommandBufferPool.Release(cmd);
         }
+    #endif
         #endregion
 
     #if UNITY_6000_0_OR_NEWER
